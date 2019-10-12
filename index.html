@@ -26,9 +26,36 @@
     <h1 id="title">as</h1>
     <p id="description">a</p>
     <form id="survey-form">
-      <input type="text" name="name" id="name" required />
-      <input type="email" name="email" id="email" required />
-      <input type="number" name="number" id="number" required min="2" max="7" />
+      <label for="name" id="name-label">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="put your full name here.."
+        required
+      />
+      <label for="email" id="email-label">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="put your email address here.."
+        required
+      />
+      <label for="number" id="number-label">Number</label>
+      <input
+        type="number"
+        name="number"
+        id="number"
+        placeholder="put a number between 2 and 7"
+        required
+        min="2"
+        max="7"
+      />
+      <select name="dropdown" id="dropdown">
+        <option value="">a</option>
+        <option value="">b</option>
+      </select>
     </form>
   </body>
 </html>
